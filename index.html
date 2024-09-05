@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Saqib Bhatti</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Saqib Bhatti</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#games" onclick="toggleMenu()">Games</a></li>
+          <li><a href="#apps" onclick="toggleMenu()">Apps</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Saqib.png" alt="Saqib profile picture" />
+      </div>
+      <div class="section__text">
+        <p>Hello, I'm Saqib, a Senior iOS Developer. I'm also a passionate 
+          game developer (mostly creating games using C++, Unreal, SFML) and I 
+          love discussing, designing and developing apps and games in general.
+          <p>&thinsp;</p>
+          I've worked on games (either to release them, to showcase my capabilities or just to play around),
+          on non-games projects, and enjoyed some tech stacks at a few places.
+          <p>&thinsp;</p>
+          I'm currently working as a part time C++ gamedev at Mohkaab Enterprise. You can reach me at sqb_bhatti@yahoo.com
+        </p>
+        <p>&thinsp;</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Saqib-Software-Engineer-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saqib-bhatti-software-engineer/'" target="_blank"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sqb-bhatti'"
+          />
+        </div> -->
+      </div>
+    </section>
+    <!-- <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Saqib, a Senior iOS Developer. I'm also a passionate 
+              game developer (mostly creating games using Unreal, SFML) and I 
+              love discussing, designing and developing apps and games in general.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section> -->
+    <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> -->
+    <section id="games">
+      <h1 class="title">Games</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="ObstacleRunner-video">
+              <iframe height="230" width="230"
+                src="https://www.youtube.com/embed/RMig6YIF6DM">
+            </iframe> 
+            </div>
+            <h2 class="experience-sub-title project-title">Obstacle Runner</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/sqb-bhatti/ObstacleRunner','_blank')">
+
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="ObstacleRunner-video">
+              <iframe height="230" width="230"
+                src="https://www.youtube.com/embed/XwITQldpdsY">
+            </iframe> 
+            </div>
+            <h2 class="experience-sub-title project-title">Object Smasher</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/sqb-bhatti/Object-Smasher','_blank')">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/2d-tank.png" width="230" height="200"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Tank-Shooter-Multiplayer(In Progress)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/sqb-bhatti/2D-Tank-Shooter-Multiplayer','_blank')">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="apps">
+      <h1 class="title">Apps</h1>
+      <div class="parent">
+        <div class="child">
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                  <img src="./assets/UOB-MY.png" width="230" height="230" />
+                <h2 class="experience-sub-title project-title">UOB TMRW Malaysia</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://apps.apple.com/us/app/uob-tmrw-malaysia/id1239716055')">
+    
+                    App Store
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="ObstacleRunner-video">
+                    <img src="./assets/Staff-App.png" width="230" height="230" /> 
+                  </div>
+                  <h2 class="experience-sub-title project-title">CareVision Staff App</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/carevision-staff-app/id1584320905','_blank')">
+                      App Store
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/family.png" width="230" height="230"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">CareVision Family App</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/carevision-family-app/id1540254463','_blank')">
+                      App Store
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="ObstacleRunner-video">
+                    <img src="./assets/Signature.png" width="230" height="230" /> 
+                  </div>
+                  <h2 class="experience-sub-title project-title">Signature-App</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/signature-app/id1470646598?ls=1','_blank')">
+                      App Store
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/HM-Staff.png" width="230" height="230"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">Hungry Mart Staff</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://apps.apple.com/us/app/hungry-mart-staff/id1144501753','_blank')">
+                      App Store
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Buunji.png" width="230" height="230"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">Buunji</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://appadvice.com/app/buunji/1135383730','_blank')">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/mobi.png" width="230" height="200"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">iPhone Monitoring Software</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://www.mobistealth.com/iphone-spy','_blank')">
+                      Link
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sqb_bhatti@yahoo.com">sqb_bhatti@yahoo.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saqib-bhatti-software-engineer/" target="_blank">LinkedIn</a></p>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+          />
+          <p><a href="https://github.com/sqb-bhatti" target="_blank">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
