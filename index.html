@@ -79,38 +79,79 @@
     </section>
     
     <section id="apps">
-      <h1 class="title">Apps</h1>
+  <h1 class="title">Apps</h1>
 
-      <div class="recipe-project">
+  <div class="apps-grid">
 
-        <div class="recipe-slider">
-        
-          <button class="slider-btn" onclick="prevSlide()">❮</button>
-  
-          <img id="recipe-slider-image" src="./assets/GroceryList.png" class="recipe-image"/>
+    <!-- RECIPE APP -->
+    <div class="recipe-project">
 
-          <button class="slider-btn" onclick="nextSlide()">❯</button>
-        </div>
-  
-        <h2 class="project-title"> Recipe App </h2>
-        
-        <p class="project-description">
-          Collaboratively developing a cross-platform recipe App with Firebase, database integration, and modern native mobile UI development.
-        </p>
+      <div class="recipe-slider">
 
-        <p class="tech-stack">
-          Swift • iOS • REST APIs • Node.js • PostgreSQL
-        </p>
+        <button class="slider-btn" onclick="prevSlide()">❮</button>
 
-        <div class="btn-container">
-          <div class="btn-container">
-          
-            <button class="btn btn-color-2 project-btn" disabled> Currently In Development</button>
-          </div>
-        </div>
+        <img id="recipe-slider-image"
+        src="./assets/GroceryList.png"
+        class="recipe-image"/>
+
+        <button class="slider-btn" onclick="nextSlide()">❯</button>
+
       </div>
-    </div>  
-  </section>
+
+      <h2 class="project-title">Recipe App</h2>
+
+      <p class="project-description">
+        Collaboratively developing a cross-platform recipe App with Firebase, database integration, and modern native mobile UI development.
+      </p>
+
+      <p class="tech-stack">
+        Swift • iOS • REST APIs • Node.js • PostgreSQL
+      </p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" disabled>
+          Currently In Development
+        </button>
+      </div>
+
+    </div>
+
+    <!-- GITHUB FOLLOWERS APP -->
+    <div class="recipe-project">
+
+      <img src="./assets/Followers.png"
+      class="recipe-image" />
+
+      <h2 class="project-title">
+        Github Followers App
+      </h2>
+
+      <div class="project-features">
+
+        <p>• Built entirely using Swift & UIKit</p>
+        <p>• 100% Programmatic UI (No Storyboards)</p>
+        <p>• Image Downloading & Caching</p>
+        <p>• Pagination & Infinite Scrolling</p>
+        <p>• GitHub API Integration</p>
+
+      </div>
+
+      <p class="tech-stack">
+        Swift • UIKit • REST APIs
+      </p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" disabled>
+          Development Completed
+
+        </button>
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="games">
       <h1 class="title">Games</h1>
@@ -258,7 +299,7 @@
       </div>
     </div>
 
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/> -->
     
   </section>
 
