@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -36,33 +39,351 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Saqib.png" alt="Saqib profile picture" />
+    
+
+<!-- ABOUT / PROFILE SECTION -->
+<section id="about">
+
+  <div class="about-hero">
+
+    <!-- LEFT: PROFILE IMAGE -->
+    <div class="about-image-container">
+      <img src="./assets/Saqib.png"
+           alt="Saqib Bhatti"
+           class="about-profile-image">
+
+      <div class="image-caption">
+        <span class="status-dot"></span>
+        Senior Software Engineer
       </div>
-      <div class="section__text">
-        <p>&thinsp;</p>
-          Hello, I’m Saqib — a Senior iOS Engineer passionate about building modern mobile applications and interactive software experiences.
-          <p>&thinsp;</p>
-          I have experience developing scalable native iOS applications using Swift, SwiftUI, UIKit, and Objective-C across multiple domains.
-          <p>&thinsp;</p>
-          Alongside iOS development, I also work with C++, Unreal Engine, and graphics programming, with a strong interest in product design, 
-          performance optimization, and cross-platform application development.
-        </p>
-        <p>&thinsp;</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Saqib_Bhatti_iOS_Engineer.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+    </div>
+
+    <!-- RIGHT: INTRODUCTION -->
+    <div class="about-intro">
+
+      <p class="about-eyebrow">HELLO, I'M</p>
+
+      <h1>Saqib Bhatti<span>.</span></h1>
+
+      <h2>Senior iOS Engineer | C++ & Game Development Enthusiast</h2>
+
+      <p class="about-description">
+        I build reliable mobile applications, solve complex
+        engineering problems and turn ideas into working products.
+
+        With 10+ years of software development experience,
+        my expertise spans native iOS engineering, application
+        architecture, production systems and mobile automation.
+
+        Beyond mobile development, I explore C++, Unreal Engine
+        and game development through hands-on projects.
+      </p>
+
+      <div class="about-buttons">
+        <a href="./assets/Saqib_Bhatti_Senior_iOS_Engineer.pdf"
+           target="_blank"
+           class="about-btn primary-btn">
+          Download CV
+        </a>
+
+        <a href="#contact"
+           class="about-btn secondary-btn">
+          Let's Connect
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- PROFESSIONAL HIGHLIGHTS -->
+  <div class="about-highlights">
+
+    <div class="highlight-card">
+      <span class="highlight-icon">💻</span>
+      <h2>10+</h2>
+      <h3>Years Experience</h3>
+      <p>Software Engineering</p>
+    </div>
+
+    <div class="highlight-card">
+      <span class="highlight-icon">📱</span>
+      <h2>iOS</h2>
+      <h3>Core Expertise</h3>
+      <p>Native Mobile Development</p>
+    </div>
+
+    <div class="highlight-card">
+      <span class="highlight-icon">🎮</span>
+      <h2>Game Development</h2>
+      <h3>C++ & SDL</h3>
+      <p>Unity & Unreal Engine</p>
+    </div>
+
+  </div>
+
+
+  <!-- TECHNICAL EXPERTISE -->
+  
+<!-- TECHNICAL EXPERTISE -->
+<div class="expertise-section">
+
+  <div class="about-section-heading">
+    <p>MY TOOLKIT</p>
+    <h2>Technologies I Work With</h2>
+    <span>Tools and technologies I use to build software.</span>
+  </div>
+
+  <!-- CATEGORY TABS -->
+  <div class="skill-tabs">
+
+    <button class="skill-tab active" data-tab="ios">
+      iOS Development
+    </button>
+
+    <button class="skill-tab" data-tab="games">
+      Game Development
+    </button>
+
+  </div>
+
+
+  <!-- iOS DEVELOPMENT -->
+  <div class="skill-panel active" id="ios-panel">
+
+    <div class="technology-grid">
+
+      <div class="tech-card">
+        <i class="devicon-swift-plain"></i>
+        <span>Swift</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Objective-C</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>UIKit</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-swift-plain"></i>
+        <span>SwiftUI</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-xcode-plain"></i>
+        <span>Xcode</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Auto Layout</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Swift Concurrency (async/await)</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>GCD</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>WidgetKit</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>StoreKit 2</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Core Animation</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>REST APIs</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>URLSession</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Codable</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-swift-plain"></i>
+        <span>Swift Package Manager</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>CocoaPods</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>TestFlight</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>App Store Connect</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>Code Signing & Provisioning</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-apple-original"></i>
+        <span>XCTest</span>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-git-plain"></i>
+        <span>Git</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- GAME DEVELOPMENT -->
+  <div class="skill-panel" id="games-panel">
+
+    <div class="technology-grid">
+
+      <div class="tech-card">
+        <i class="devicon-cplusplus-plain"></i>
+        <span>C++</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-unrealengine-original"></i>
+        <span>Unreal Engine</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-unity-plain"></i>
+        <span>Unity</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-cplusplus-plain"></i>
+        <span>SDL</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <!-- PROFESSIONAL JOURNEY -->
+  <div class="journey-section">
+
+    <div class="about-section-heading">
+      <p>MY EXPERIENCE</p>
+      <h2>Professional Journey</h2>
+      <span>A few highlights from my engineering career.</span>
+    </div>
+
+    <div class="journey-list">
+
+      <details class="journey-item">
+        <summary>
+          <div>
+            <h3>Senior iOS Engineer</h3>
+            <p>Rakuten Trade · Malaysia</p>
+          </div>
+          <span class="journey-date">2025 – 2026</span>
+        </summary>
+
+        <div class="journey-content">
+          <p>
+            Worked on the iSPEED.my trading application,
+            modernized legacy Objective-C UI components,
+            improved application quality and implemented
+            automated CI/CD releases.
+          </p>
         </div>
-      </div>
-    </section>
+      </details>
+
+
+      <details class="journey-item">
+        <summary>
+          <div>
+            <h3>Senior iOS Engineer</h3>
+            <p>UOB Bank · Malaysia & Thailand</p>
+          </div>
+          <span class="journey-date">2022 – 2023</span>
+        </summary>
+
+        <div class="journey-content">
+          <p>
+            Maintained and enhanced production banking
+            applications, implemented change requests
+            and resolved application defects.
+          </p>
+        </div>
+      </details>
+
+
+      <details class="journey-item">
+        <summary>
+          <div>
+            <h3>Lead iOS Developer</h3>
+            <p>CareVision · Pakistan</p>
+          </div>
+          <span class="journey-date">2020 – 2022</span>
+        </summary>
+
+        <div class="journey-content">
+          <p>
+            Led the development and delivery of two
+            healthcare and care-home management
+            iOS applications.
+          </p>
+        </div>
+      </details>
+
+
+      <details class="journey-item">
+        <summary>
+          <div>
+            <h3>Earlier Engineering Experience</h3>
+            <p>Multiple Companies</p>
+          </div>
+          <span class="journey-date">2011 – 2020</span>
+        </summary>
+
+        <div class="journey-content">
+          <p>
+            Worked across native iOS, macOS, Objective-C,
+            C++, backend integrations and mobile
+            application development.
+          </p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
     
     <section id="apps">
   <h1 class="title">Apps</h1>
