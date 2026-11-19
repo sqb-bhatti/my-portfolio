@@ -1065,3 +1065,237 @@ footer p {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+
+
+/* =========================================
+   FEATURED APPS SECTION
+========================================= */
+
+#apps {
+  padding: 70px 8%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.apps-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.apps-heading > p {
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.apps-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.apps-heading span {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* APP GRID */
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  align-items: start;
+}
+
+/* APP CARD */
+
+.app-project-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* VIDEO PREVIEW */
+
+.app-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background: #f1f5f9;
+}
+
+.app-demo-video {
+  display: block;
+  width: 100%;
+  max-width: 245px;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  border-radius: 28px;
+  background: #111111;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+/* APP INFORMATION */
+
+.app-project-content {
+  padding: 25px;
+}
+
+.app-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.app-title-row h2 {
+  font-size: 1.35rem;
+  color: #222222;
+}
+
+/* STATUS BADGES */
+
+.app-status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.app-status.beta {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.app-status.completed {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+/* DESCRIPTION */
+
+.app-description {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* TECHNOLOGY TAGS */
+
+.app-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.app-technologies span {
+  padding: 7px 11px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* APP LINKS */
+
+.app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.app-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.app-link i {
+  font-size: 1.1rem;
+}
+
+.primary-app-link {
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.primary-app-link:hover {
+  color: #ffffff;
+  background: #1d4ed8;
+}
+
+.secondary-app-link {
+  color: #273449;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.secondary-app-link:hover {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #apps {
+    padding: 45px 6%;
+  }
+
+  .apps-heading h1 {
+    font-size: 2rem;
+  }
+
+  .apps-heading span {
+    font-size: 0.85rem;
+  }
+
+  .app-project-content {
+    padding: 20px;
+  }
+
+  .app-title-row h2 {
+    font-size: 1.2rem;
+  }
+
+  .app-demo-video {
+    max-width: 220px;
+  }
+}
